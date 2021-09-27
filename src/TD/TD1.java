@@ -14,14 +14,14 @@ public class TD1 {
 	
 	public static void main(String[] args) {
 		
-		//Rapppel algortihme types simple/appels/conditionneles/boucles
+		//Reminders Algorithms/Simple types/conditionnals/loops
 		
-		//Etapes:
-		//1-Description des etapes en langage naturel
-		//2-Si une soulition est trouvée, l'affichée
-		//3-Transformation en algortihme ecrit en pseudo langage
-		//4-L'exectution n'est pas très rapide !! , revoir l'algortime pour tirer les causes possibles
-		//5-Modifier pour améliorer la rapidité
+		//Steps:
+		//1-Description of steps via the natural langage
+		//2-When is solution is finded, diplay it
+		//3-Transformation to algortihm writed in pseudo langage
+		//4-Execution is slow !! , Review the algorithm to accomplish a disgnostic
+		//5-Edit to improve speed
 		
 		System.out.println("Calcul factorial N=a!+b!+c! tels que N=abc en systeme décimal");
 		System.out.println("Trouver a,b,c tels que a!+b!+c! = abc");
@@ -40,12 +40,14 @@ public class TD1 {
 			System.out.println("N1 = "+N1+" , "+"N2 = "+N2);
 			
 			if(N1==N2) {
+				
 				//System.out.println("(a,b,c) = ("+a+","+b+","+c+")");
 				
 				compteurSolutions++;
 				
 				if(compteurSolutions!=0 && a==7) {
-					//Création puis remplissage tableau
+					
+					//Building the solution array, filling the table
 					
 					tableauSolutions = new int[compteurSolutions][3];
 					
@@ -65,6 +67,11 @@ public class TD1 {
 					//Affichage de la solution
 					for(int s = 0;s<compteurSolutions;s++) {
 						for (int m = 0;m<3;m++) {
+							
+							if(m==2) {
+								System.out.print(tableauSolutions[s][m]);
+								break;
+							};
 							System.out.print(tableauSolutions[s][m]+",");
 						}
 						System.out.print("\n");
@@ -76,6 +83,8 @@ public class TD1 {
 		};
 	}
 	
+	
+	//Factorial function
 	public static int factorial(int nombre) {
 		int resultat=1;
 		if(nombre == 0) {
