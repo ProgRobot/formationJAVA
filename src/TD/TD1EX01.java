@@ -6,7 +6,7 @@ package TD;
  * 
  */
 
-public class TD1 {
+public class TD1EX01 {
 	
 	/**
 	 * @param args
