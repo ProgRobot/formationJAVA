@@ -35,6 +35,9 @@ public class TD02EX01 {
 			
 			System.out.print("Play again ?\n1.Yes--2.No\n------\n");
 			
+			//TODO optimisation pour utilisation d'une seul objet SCANNER
+			//TODO Introduction de la gestion des exceptions
+			
 			Scanner scanner2 = new Scanner (System.in);  
 			int responseInt = scanner2.nextInt();
 			if(responseInt == 1) {
